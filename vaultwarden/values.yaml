@@ -19,7 +19,7 @@ database:
 # Set vaultwarden application variables
 vaultwarden:
   ## Set Bitwarden URL, mandatory for invitations over email. Recommended if using a reverse proxy / ingress. Format is https://name or http://name
-  domain: https://pw.homelab.local
+  #domain:
   # Allow any user to sign-up: https://github.com/dani-garcia/vaultwarden/wiki/Disable-registration-of-new-users
   allowSignups: true
   ## Whitelist domains allowed to sign-up. 'allowSignups' is ignored if set.
@@ -81,11 +81,11 @@ vaultwarden:
 
   admin:
     # Enable admin portal.
-    enabled: true
+    enabled: false
     # Disabling the admin token will make the admin portal accessible to anyone, use carefully: https://github.com/dani-garcia/vaultwarden/wiki/Disable-admin-token
     disableAdminToken: false
     ## Token for admin login, will be generated if not defined. https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page
-    token: 6xIFJsLnnq1Oa7IyFaJJ7k8PVyyamq
+    #token:
     ## Use existing secret for the admin token. Key is 'admin-token'.
     #existingSecret:
 
